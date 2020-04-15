@@ -1,0 +1,11 @@
+body {
+    font-family: 'Montserrat', serif;
+    display: grid;
+    height: 100vh;
+    margin: 0 1em;
+    place-items: center center;
+    text-align: center;
+    background-color: #6495ed;
+    color: whitesmoke;
+    font-size: x-large;
+}
