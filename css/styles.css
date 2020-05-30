@@ -1,8 +1,9 @@
 body {
     font-family: 'Montserrat', serif;
     display: grid;
-    grid-template-rows: auto 1fr;
+    grid-template-rows: auto 1fr auto;
     width: 100vw;
+    height: 100vh
 }
 
 header {
@@ -18,7 +19,7 @@ main h1 {
 }
 
 header, main {
-    margin: 0 3em;
+    margin: 0 3em 1em 3em;
 }
 
 section {
@@ -48,8 +49,42 @@ section > a:active {
     top: 5px;
 }
 
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+}
+
+footer p {
+    font-size: 2rem;
+    margin: 0 0 1em 0;
+}
+
+footer a {
+    margin: 0 auto;
+    background-color: white;
+    box-shadow: 0 5px 0 #bbbbbb;
+    color: black;
+    padding: 1em 1.5em;
+    display: block;
+    width: max-content;
+    position: relative;
+    text-decoration: none;
+}
+
+footer a:hover {
+    background-color: whitesmoke;
+}
+
+footer a:active {
+    box-shadow: none;
+    top: 5px;
+}
+
 h1, h2, h3 {
     font-family: 'Lora', sans-serif;
+    letter-spacing: 1px;
 }
 
 p {
@@ -62,7 +97,7 @@ p {
     }
 
     main, header {
-        width: 75vw;
+        width: 60vw;
         margin: 0 auto;
     }
 }
