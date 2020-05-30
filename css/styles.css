@@ -35,12 +35,19 @@ section {
     margin: 1em 0;
 }
 
+section #images {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    justify-content: space-between;
+}
+
 section > a {
+    margin-top: 1em;
     background-color: orange;
     box-shadow: 0 5px 0 darkorange;
     color: black;
     padding: 1em 1.5em;
-    display: block;
+    display: inline-block;
     width: max-content;
     position: relative;
     text-decoration: none;
@@ -116,5 +123,11 @@ p {
 
     section > a {
         width: auto;
+    }
+
+    section #images {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
     }
 }
